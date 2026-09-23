@@ -1,3 +1,8 @@
+## 1.6.6 - Unreleased
+
+- Migrate the Android build to Flutter's built-in Kotlin: the plugin no longer applies the Kotlin Gradle Plugin itself, silencing Flutter's "plugins that apply KGP" warning and staying compatible with AGP 9 / `android.builtInKotlin=true` (#138)
+- Raise the minimum supported versions to Flutter 3.44 / Dart 3.12, as required by the built-in Kotlin migration
+
 ## 1.6.5 - 2026-08-21
 
 - Fix Android Auto list template startup by validating selectable lists before they reach the host (#120) (ty @JulianBissekkou)
